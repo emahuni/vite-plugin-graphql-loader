@@ -104,7 +104,7 @@ function oneQuery(doc, operationName) {
   return newDoc;
 }
 
-module.exports = doc;
+export default doc;
 
-module.exports["TestFragment"] = oneQuery(doc, "TestFragment");
+export const TestFragment = oneQuery(doc, "TestFragment");
                 
