@@ -86,7 +86,7 @@ doc.loc.source = ${JSON.stringify(documentNode.loc.source)};
 
                         const opName = op.name.value;
                         outputCode += `
-export const opName = oneQuery(doc, "${opName}");
+export const ${opName} = oneQuery(doc, "${opName}");
                 `;
                     }
                 }
